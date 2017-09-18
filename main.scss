@@ -1,0 +1,336 @@
+html {
+  background: #FFFFFF;
+}
+
+body {
+  margin: 0 8%;
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+}
+
+.nav {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-logo {
+  height: 120px;
+  width: 120px;
+  border: none;
+  box-shadow: none;
+}
+
+ul{
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.fa {
+  width: 20px;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  line-height: 2.3em;
+}
+
+a {
+  color: #3baf9b;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.latest-tweet {
+  margin-top: 30px;
+  width: 90%;
+}
+
+.latest-tweet-link {
+  font-size: 1em;
+  border: 1px solid #eee;
+  text-align: center;
+  border-radius: 5px;
+  color: #3baf9b;
+  line-height: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.latest-tweet-article {
+  font-size: 0.875em;
+  margin-bottom: 10px;
+}
+
+.description {
+  width: 79%;
+  display: inline-block;
+}
+
+.image-detail {
+  height: 400px;
+  background-image: url(./resources/foodsense.jpg);
+  background-size: cover;
+}
+
+h1, h2{
+  font-style: italic;
+  position: relative;
+  top: 60%;
+  display: inline-block;
+  padding: 0.3em 15px;
+  background-color: #FFFFFF;
+  margin: 0 100px 0 0;
+}
+
+h2{
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.image-nav {
+  display: flex;
+}
+
+.image-nav-items {
+  height: 105px;
+  background-color:#eff8f7;
+  background-size: 100%;
+  border: 1px solid #d9efec;
+  color: #3baf9b;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-nav-items:nth-of-type(2){
+  background-color: #d9efec;
+}
+
+.items-title {
+  font-size: 1.5em;
+  line-height: 1.5em;
+
+}
+
+.items-description {
+  font-size: 0.81em;
+  font-family: "Josefin Slab", serif;
+  font-style: italic;
+}
+
+.sign-up {
+  margin: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign-up-description{
+  font-size: 12px;
+  line-height: 1.5em;
+  font-family: "Josefin Slab", serif;
+  width: 55%;
+}
+
+.email-input {
+  width: 190px;
+  line-height: 1.1rem;
+}
+
+.email-submit {
+  background: linear-gradient(#FFFFFF, #e5e5e5);
+  font-size: 0.8em;
+  padding: 0.2em 1.4em;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+.recommend-cook {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommend-detail {
+  width: 20%;
+}
+
+img {
+  padding: 15px;
+  width: 80%;
+  box-shadow: 3px 3px 3px #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+
+.recommend-title {
+  color: #3baf9b;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.recommend-article {
+  font-size: 13px;
+}
+
+.recommend {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #ABACAC;
+}
+
+.footer{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: inline-block;
+}
+
+.footer-link {
+  color: #3baf9b;
+  border-right: 2px solid #e5e5e5;
+  padding: 0 5px;
+  margin: 10px 0;
+}
+
+.footer-notation {
+  font-size: 0.9em;
+  color: #ABACAC;
+  margin-bottom: 20px;
+}
+
+.footer-share-link {
+  font-size: 1em;
+  color: #ABACAC;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 980px) and (min-width: 580px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .nav {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+    margin-left: 5%;
+  }
+
+  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link{
+    font-size: 1rem;
+  }
+
+  .latest-tweet{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description, .nav{
+    width: 100%;
+  }
+
+  .fa {
+    display: none;
+  }
+
+  .nav-link{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    width: 80%;
+    position: absolute;
+  }
+
+  .nav-logo{
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  .latest-tweet{
+    display: none;
+  }
+
+  .image-detail {
+    height: 300px;
+    background-position-x: center;
+  }
+
+  h1, h2{
+    font-size: 1.2rem;
+    display: block;
+    top: 80%;
+    margin: 0;
+  }
+
+  .image-nav{
+    display: none;
+  }
+
+  .sign-up{
+    flex-direction: column;
+  }
+
+  .sign-up-description{
+    width: 90%;
+  }
+
+  .recommend-cook{
+    flex-direction: column;
+  }
+
+  .recommend-detail{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 15px 30px;
+  }
+
+  img{
+    height: inherit;
+    text-align: center;
+  }
+
+  .footer, .footer-link{
+    font-size: 11px;
+  }
+
+  .footer-share{
+    margin-left: 20px;
+  }
+}
